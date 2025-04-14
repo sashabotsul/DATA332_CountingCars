@@ -3,9 +3,9 @@ library(ggplot2)
 library(DT)
 library(readxl)
 
-setwd('C:/Users/retai/Documents/r_projects/counting_cars')
+data_url <- getURL("https://raw.githubusercontent.com/retflipper/DATA332_CountingCars/refs/heads/main/data/Counting_Cars.csv")
+dataset <- read.csv(text = data_url)
 
-dataset <- read_excel('data/counting_cars.xlsx')
 dataset <- dataset[-1]
 dataset <- dataset[1:9]
 
