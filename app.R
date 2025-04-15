@@ -2,6 +2,7 @@ library(shiny)
 library(ggplot2)
 library(DT)
 library(readxl)
+library(RCurl)
 
 data_url <- getURL("https://raw.githubusercontent.com/retflipper/DATA332_CountingCars/refs/heads/main/data/Counting_Cars.csv")
 dataset <- read.csv(text = data_url)
